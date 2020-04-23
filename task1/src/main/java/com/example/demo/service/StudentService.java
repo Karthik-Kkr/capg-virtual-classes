@@ -14,7 +14,7 @@ public class StudentService {
 	@Autowired
 	StudentRepo  studentRepo;
 	
-	public Student   findStudentByName(String studentName)
+	public Student findStudentByName(String studentName)
 	{
 		return  studentRepo.findStudentByName(studentName);
 	}
@@ -23,7 +23,7 @@ public class StudentService {
 		return studentRepo.findall();
 	}
 
-	public Student  addStudent(Student student)
+	public Student addStudent(Student student)
 	{
 		return studentRepo.addStudent(student);
 	}
